@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Die = ({ value }) => {
+export default function Die(props) {
   return (
-    <>
-      <h1 className='grid-item'>{value}</h1>
-    </>
+    <div className='die-face'>
+      <h2 className='die-num'>{props.value}</h2>
+    </div>
   )
 }
-
-export default Die
