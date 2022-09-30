@@ -13,7 +13,6 @@ export default function App() {
     const allValue = dice.every((die) => die.value === firstValue)
     if (allHeld && allValue) {
       setTenzies(true)
-      console.log('u won')
     }
   }, [dice])
 
